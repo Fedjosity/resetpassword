@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    flex-direction: column;
+    }
+.box{
+    width: 350px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color:white;
+    text-align: center;
+    border-radius: 10px;
+    height: 380px;
+} 
+   
+.box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.box input[type = "email"],.box input[type = "password"]{
+color:black;
+border:0;
+background-color: transparent;
+display: block;
+margin: 20px auto;
+text-align: center;
+border: 2px solid rgb(0, 0, 0);
+padding: 14px 3px;
+width: 350px;
+outline: none;
+border-radius: 10px;
+}
+
+.box input[type="submit"]{
+border:0;
+background-color: #1976d2;
+display: block;
+margin: 20px auto;
+text-align: center;
+border: 2px solid blueviolet;
+padding: 14px 10px;
+width: 250px;
+outline: none;
+border-radius: 10px;
+transition: 0.25s;
+cursor: pointer;
+color: white;
+}
+
+.box input[type="submit"]:hover{
+background-color:darkblue ;
+}
+.status{
+width: 90%;
+max-width: 470px;
+text-align: center;
+margin-top: 50px;
+border-radius: 4px;
+}
+#status.success{
+    background-color: rgb(211, 250, 153);
+    animation: status 1s ease forwards;
+}
+#status.error{
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 5s ease forwards;
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events:all;
+    }   
+    90%{
+        opacity: 1;
+        pointer-events:all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events:none;
+    }
+}
+    
